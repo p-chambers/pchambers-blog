@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import sys
+
 AUTHOR = u'Paul Chambers'
 SITENAME = u'P Chambers'
 SITEURL = ''
@@ -19,16 +21,19 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+STATIC_PATHS = ['images', 'notebooks']
 
 # Most of below borrowed from H Fangohrs blog
 #############################################
 # # Blogroll
 LINKS = (('occ-airconics docs', 'http://occ-airconics.readthedocs.io/en/latest/'),
-         ('GitHub', 'https://github.com/p-chambers'))
+         ('Next Generation Computational Modelling CDT',
+            'http://www.ngcm.soton.ac.uk/'))
 
 # # Social widget
-SOCIAL = (('Twitter', 'https://twitter.com/pr_chambers'), 
-          )
+SOCIAL = (('Twitter', 'https://twitter.com/pr_chambers'),
+          ('GitHub', 'https://github.com/p-chambers'),
+          ('LinkedIn', 'https://uk.linkedin.com/in/paul-chambers-88b72b78'))
 
 DEFAULT_PAGINATION = False
 
@@ -36,12 +41,11 @@ DEFAULT_PAGINATION = False
 RELATIVE_URLS = True
 
 # install from https://github.com/duilio/pelican-octopress-theme
-THEME = 'themes/pelican-octopress-theme'
+# THEME = 'themes/pelican-octopress-theme'
 
 # what is displayed at the top
-# MENUITEMS = [('Archive', 'http://ngcm.soton.ac.uk/blog/archives.html'),
-             # ('Tags', 'tags.html'), ]
-             # ('About', 'https://p-chambers.github.io/about.html')]
+MENUITEMS = [('Archives', '/archives.html'),]
+             # ('Python', 'categories.html'), ]
 
 # Setting names of output files. Include date, so we can have many entries
 # over time:
@@ -60,41 +64,23 @@ USE_FOLDER_AS_CATEGORY = True
 
 
 # Sharing
-TWITTER_USER = 'NGCM_Soton'
+TWITTER_USER = 'pr_chambers'
 
 # I couldn't get the inlining of tweets to work (HF)
 # both IDs should work for NGCM_Soton
-# TWITTER_WIDGET_ID = 401308267306967040
-# TWITTER_WIDGET_ID = "522528503103631361"
+TWITTER_WIDGET_ID = 600980431568244737
 TWITTER_TWEET_BUTTON = True
 TWITTER_FOLLOW_BUTTON = True
-TWITTER_TWEET_COUNT = 3
+TWITTER_TWEET_COUNT = 5
 TWITTER_SHOW_REPLIES = True
 TWITTER_SHOW_FOLLOWER_COUNT = True
-
-# copied from the readme file of the theme
-# TWITTER_WIDGET_ID``: (required to enable feed) ID obtained from
-# `twitter settings <https://twitter.com/settings/widgets>`_
-# TWITTER_TWEET_BUTTON``: ``False`` show twitter tweet button
-# TWITTER_FOLLOW_BUTTON``: ``False`` show twitter follow button
-# TWITTER_TWEET_COUNT``: ``3`` number of latest tweets to show
-# TWITTER_SHOW_REPLIES``: ``'false'`` whether to list replies among latest
-# tweets
-# TWITTER_SHOW_FOLLOWER_COUNT``: ``'true'`` show number of followers
-
-
-# RSS/Atom feeds
-FEED_DOMAIN = SITEURL
-FEED_ATOM = 'atom.xml'
-
 
 # Search
 SEARCH_BOX = True
 
-
 # Other pages (not advertised currently)
-TAG_URL = 'tag-{slug}.html'
-TAG_SAVE_AS = 'tag-{slug}.html'
+# TAG_URL = 'tag-{slug}.html'
+# TAG_SAVE_AS = 'tag-{slug}.html'
 
 CATEGORY_URL = 'category-{slug}.html'
 CATEGORY_SAVE_AS = 'category-{slug}.html'
@@ -124,7 +110,7 @@ DISPLAY_CATEGORIES_ON_SIDEBAR = False
 DISPLAY_TAGS_ON_SIDEBAR = False
 
 # Allow discussion
-DISQUS_SITENAME = "ngcmblog"
+DISQUS_SITENAME = "p-chambers"
 
 
 # The remaining entries in this config file are not currently
@@ -134,20 +120,20 @@ DISQUS_SITENAME = "ngcmblog"
 # should we need this.
 
 # # Tell pelican which directories contains the plugins
-# PLUGIN_PATHS = ["plugins"]
+PLUGIN_PATHS = ["plugins"]
 # # Currently, this directory is empty, but we leave it here
 # #
 
 # # The next few lines allow automatic conversion of
 # # ipython notebooks to html as blog entries. We use Jake Vanderplaas'
 # # liquid_tags.notebook (see
-# # https://github.com/getpelican/pelican-plugins/blob/master/liquid_tags/Readme.md)
+# https://github.com/getpelican//pelican-plugins/blob/master/liquid_tags/Readme.md)
 
 # # Allo use of the following plugins:
 
-# PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
-#            'liquid_tags.youtube', 'liquid_tags.vimeo',
-#            'liquid_tags.include_code', 'liquid_tags.notebook']
+PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
+           'liquid_tags.youtube', 'liquid_tags.vimeo',
+           'liquid_tags.include_code', 'liquid_tags.notebook']
 
 # # The above plugins should in principle allow to integrate a IPython Notebook
 # # (see example
@@ -158,11 +144,11 @@ DISQUS_SITENAME = "ngcmblog"
 # # thing harder to read.
 
 # # the ipython notebook liquid_tags plugin needs the following:
-# if sys.version_info[0] == 2:
-#     EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
-# else:  # python3 and above
-#     EXTRA_HEADER = open('_nb_header.html').read()
+if sys.version_info[0] == 2:
+    EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
+else:  # python3 and above
+    EXTRA_HEADER = open('_nb_header.html').read()
 
 # # Define the directory below which notebooks (*.ipynb) need to be
 # # stored
-# NOTEBOOK_DIR = 'notebooks'
+NOTEBOOK_DIR = 'notebooks'
