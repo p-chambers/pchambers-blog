@@ -41,7 +41,7 @@ DEFAULT_PAGINATION = False
 RELATIVE_URLS = True
 
 # install from https://github.com/duilio/pelican-octopress-theme
-# THEME = 'themes/pelican-octopress-theme'
+THEME = 'themes/pelican-bootstrap3'
 
 # what is displayed at the top
 MENUITEMS = [('Archives', '/archives.html'),]
@@ -54,14 +54,6 @@ ARTICLE_SAVE_AS = '{date:%Y}-{date:%m}-{date:%d}/{slug}.html'
 
 # make enttries in 'seminar' to appear in category 'seminar' as default
 USE_FOLDER_AS_CATEGORY = True
-
-
-
-
-# Up to here ok ... fix below!
-
-
-
 
 # Sharing
 TWITTER_USER = 'pr_chambers'
@@ -133,7 +125,9 @@ PLUGIN_PATHS = ["plugins"]
 
 PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
            'liquid_tags.youtube', 'liquid_tags.vimeo',
-           'liquid_tags.include_code', 'liquid_tags.notebook']
+           'liquid_tags.include_code', 'liquid_tags.notebook',
+           'render_math']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'toc']
 
 # # The above plugins should in principle allow to integrate a IPython Notebook
 # # (see example
@@ -152,3 +146,14 @@ else:  # python3 and above
 # # Define the directory below which notebooks (*.ipynb) need to be
 # # stored
 NOTEBOOK_DIR = 'notebooks'
+
+
+# Add custom css
+CUSTOM_CSS = 'static/custom.css'
+# Tell Pelican to add 'extra/custom.css' to the output dir
+STATIC_PATHS = ['images', 'extra/custom.css']
+
+# Tell Pelican to change the path to 'static/custom.css' in the output dir
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'static/custom.css'}
+}
