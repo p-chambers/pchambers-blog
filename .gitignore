@@ -90,6 +90,3 @@ ENV/
 
 
 # User added ignores:
-pelican-plugins/
-themes/
-output/
