@@ -8,25 +8,23 @@ Summary: ![Python Logo]({filename}/images/Python-logo-notext.png){width=100} Str
 
 <!-- The contents box (auto generation with [TOC] mdextension didn't extract ipython notebook headings) -->
 <div class="toc" markdown="1">
-Contents
---------
 0. [Introduction](#intro)
-0. Prerequisites
+1. [Prerequisites](#Software-requirements)
 	- [Software Requirements](http://ngcm.github.io/summer-academy-2016-basics/indexpages/prerequisites.html)
 	- [Material Download](https://github.com/p-chambers/Intermediate_Python/archive/master.zip)
-1. [Basics refresher](#Basics-Refresher)
+2. [Basics refresher](#Basics-Refresher)
 	- [Lists](#Lists)
 	- [For loops](#For-Loops)
     - [Functions](#Functions)
     - [Numpy](#Numpy)
     - [Matplotlib](#Matplotlib)
     - [Exercise](#Exercise:-Basics-Refresher)
-2. [Tuples](#Tuples)
-3. [Dictionaries](#Dictionaries)
+3. [Tuples](#Tuples)
+4. [Dictionaries](#Dictionaries)
 	[Exercise](#Exercise:-Tuples-and-Dictionaries)
-4. [Numpy dtypes](#Structured-data:-Numpy-dtypes)
+5. [Numpy dtypes](#Structured-data:-Numpy-dtypes)
 	- [Exercise](#Exercise:-Numpy-dtypes)
-5. [Object-oriented programming (OOP)](#Intro-to-Python-OOP)
+6. [Object-oriented programming (OOP)](#Intro-to-Python-OOP)
 	- [Classes basics](#Classes:-Basics)
 	- [Initialisation and self](#Classes:-Initialisation-and-self)
 		* [Classes Exercise 1](#Exercise:-Basics-and-Initialisation)
@@ -34,12 +32,13 @@ Contents
 	- [Inheritance](#Classes:-Inheritance)
 	- [Magic Methods](#Classes:-Magic-Methods)
 		* [Classes Exercise 2](#Exercise:-Inheritance-and-Magic-Methods)
-6. [Extras](#Python-2-vs-3)
+7. [Extras](#Python-2-vs-3)
 	- [Python 2 vs 3](#Python-2-vs-3)
 	- [Additional exercise](#Extra-Material)
-7. [Summary](#Summary)
+8. [Summary](#Summary)
 
 </div>
+
 <!-- End contents box -->
 
 Introduction   {#intro}
@@ -51,7 +50,7 @@ The concepts of OOP are often covered lightly in undergraduate and basics course
 
 ![Summer academy teaching]({filename}/images/28-06-16_summer_academy_python.jpg){width="850"}
 
-Software Requirements
+Software Requirements    {#Software-requirements}
 ---------------------
 
 Setup instructions for a range of users are available [here](http://ngcm.github.io/summer-academy-2016-basics/indexpages/prerequisites.html). Click [here](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html) for more info on how to start a live Jupyter notebook.
