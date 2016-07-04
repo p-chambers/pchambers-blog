@@ -163,16 +163,10 @@
 <!-- End Banner -->
 <div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
     <div class="row">
-        <div class="col-lg-2" id="toc">
-            <div class="affix">
-        {% block toc %}
-        {% endblock %}
-            </div>
-        </div>
         {% if not HIDE_SIDEBAR or ABOUT_ME %}
-        <div class="col-sm-8">
+        <div class="col-sm-10">
         {% else %}
-        <div class="col-lg-10">
+        <div class="col-lg-12">
         {% endif %}
         {% block breadcrumbs %}
         {% endblock %}

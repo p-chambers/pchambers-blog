@@ -70,41 +70,47 @@
 {% block content %}
     <section id="content">
         <article>
-            <header class="page-header">
-                <h1>
-                    <a href="{{ SITEURL }}/{{ article.url }}"
-                       rel="bookmark"
-                       title="Permalink to {{ article.title|striptags }}">
-                        {{ article.title }}
-                    </a>
-                </h1>
-            </header>
-            <div class="entry-content">
-                <div class="panel">
-                    <div class="panel-body">
-                        {% include "includes/article_info.html" %}
-                    </div>
+
+            <div class="row">
+                {% if article.toc %}
+                <div class="col-lg-3"|>
+                    <nav class="table-of-content" style="margin-top: 100px">
+                        <h4>Contents</h4>
+                        {{ article.toc }}
+                    </nav>
                 </div>
-                {{ article.content }}
-            </div>
+
+                <div class="col-lg-9">
+                    {% else %}
+                    <div class="col-sm-12">
+                {% endif %}    
+                <header class="page-header">
+                    <h1>
+                        <a href="{{ SITEURL }}/{{ article.url }}"
+                           rel="bookmark"
+                           title="Permalink to {{ article.title|striptags }}">
+                            {{ article.title }}
+                        </a>
+                    </h1>
+                </header> 
+                <div class="entry-content">
+                    <div class="panel">
+                        <div class="panel-body">
+                            {% include "includes/article_info.html" %}
+                        </div>
+                    </div>
+                    {{ article.content }}
+                </div>
             <!-- /.entry-content -->
             {% include 'includes/related-posts.html' %}
             {% include 'includes/series.html' %}
             {% include 'includes/addthis.html' %}
             {% include 'includes/shariff.html' %}
             {% include 'includes/comments.html' %}
+        </div>
         </article>
     </section>
 
-{% endblock %}
-
-{% block toc %}
-    {% if article.toc %}
-        <nav class="toc">
-            <h4>Contents</h4>
-            {{ article.toc }}
-        </nav>
-    {% endif %}     
 {% endblock %}
 
 

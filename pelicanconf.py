@@ -126,7 +126,7 @@ PLUGIN_PATHS = ["plugins"]
 PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
            'liquid_tags.youtube', 'liquid_tags.vimeo',
            'liquid_tags.include_code', 'liquid_tags.notebook',
-           'render_math']
+           'render_math', 'extract_toc']
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'toc']
 
 # # The above plugins should in principle allow to integrate a IPython Notebook
