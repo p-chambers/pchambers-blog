@@ -21,7 +21,7 @@ Summary: ![Python Logo]({filename}/images/Python-logo-notext.png){width=100} Str
     - [Exercise](#Exercise:-Basics-Refresher)
 3. [Tuples](#Tuples)
 4. [Dictionaries](#Dictionaries)
-	[Exercise](#Exercise:-Tuples-and-Dictionaries)
+	- [Exercise](#Exercise:-Tuples-and-Dictionaries)
 5. [Numpy dtypes](#Structured-data:-Numpy-dtypes)
 	- [Exercise](#Exercise:-Numpy-dtypes)
 6. [Object-oriented programming (OOP)](#Intro-to-Python-OOP)
