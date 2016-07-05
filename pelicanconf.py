@@ -6,7 +6,7 @@ import sys
 
 AUTHOR = u'Paul Chambers'
 SITENAME = u'P Chambers'
-SITEURL = ''
+SITEURL = 'https://p-chambers.github.io'
 
 PATH = 'content'
 
@@ -103,7 +103,7 @@ DISPLAY_TAGS_ON_SIDEBAR = False
 
 # Allow discussion
 DISQUS_SITENAME = "p-chambers"
-
+DISQUSURL = SITEURL
 
 # The remaining entries in this config file are not currently
 # used (Oct 2015): we do not need plugins, and we do not have
@@ -151,7 +151,7 @@ NOTEBOOK_DIR = 'notebooks'
 # Add custom css
 CUSTOM_CSS = 'static/custom.css'
 # Tell Pelican to add 'extra/custom.css' to the output dir
-STATIC_PATHS = ['images', 'extra/custom.css']
+STATIC_PATHS = ['images', 'extra/custom.css', 'downloads']
 
 # Tell Pelican to change the path to 'static/custom.css' in the output dir
 EXTRA_PATH_METADATA = {
