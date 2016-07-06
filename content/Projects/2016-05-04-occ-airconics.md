@@ -1,4 +1,4 @@
-Title: Standalone AirCONICS for Python
+Title: Aircraft Geometry in Python
 Slug: occ-airconics
 Date: 2016-05-04 15:26:21
 Tags: Geometry, Python-OCC
@@ -8,7 +8,7 @@ Author: Paul Chambers
 ![occ-airconics Airliner Geometry]({filename}/images/Projects/occ-airconics_airliner.png){class=align-center}
 
 
-As part of my research, I am interested the use of computer code as a parameterized ‘recipe’ for constructing air vehicle preliminary designs. By defining the ‘bottom-up’ construction of the geometry in this way, a high level of flexibility and reproducibility can be achieved, both of which are desirable traits in the context of design optimisation. The [AirCONICS](https://aircraftgeometrycodes.wordpress.com/airconics/) plugin for [Rhinoceros](http://www.rhino3d.com/) [1, 2] is one such tool, containing generic and highly customizable recipes for creating aircraft components as Python/Rhino objects.
+As part of my research, I am interested in the use of computer code as a parameterized ‘recipe’ for constructing air vehicle preliminary designs. By defining the ‘bottom-up’ construction of the geometry in this way, a high level of flexibility and reproducibility can be achieved, both of which are desirable traits in the context of design optimisation. The [AirCONICS](https://aircraftgeometrycodes.wordpress.com/airconics/) plugin for [Rhinoceros](http://www.rhino3d.com/) [1, 2] is one such tool, containing generic and highly customizable recipes for creating aircraft components as Python/Rhino objects.
 
 This project aims to port the aircraft geometry routines of AirCONICS to a Python standalone package through through a code called [occ_airconics](http://occ-airconics.readthedocs.io/en/latest/index.html). Instead of using the [OpenNURBS](http://www.rhino3d.com/opennurbs) framework through Rhinoceros, the package is powered by [Open CASCADE](http://www.opencascade.com/), an open source NURBS CAD kernel, and [PythonOCC](http://www.pythonocc.org/).
 
