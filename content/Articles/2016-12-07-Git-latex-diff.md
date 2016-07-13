@@ -47,7 +47,7 @@ As a small `git` refresher, you can also `diff` between specific commits. First,
 
 ## The `pdf` Method
 
-Ok, so the previous method still required some extra processing to read, as there is still not line wrapping, and not everybody likes reading long latex code in a terminal. Luckily, there's a nifty `difftool` for this, named [latexdiff](http://www.ctan.org/tex-archive/support/latexdiff). This can be found in the `apt-get` package repositories,
+Ok, so the previous method still required some extra processing to read, as there is still no line wrapping, and not everybody likes reading long latex code in a terminal. Luckily, there's a nifty `difftool` for this, named [latexdiff](http://www.ctan.org/tex-archive/support/latexdiff). This can be found in the `apt-get` package repositories,
 
 	sudo apt-get install latexdiff
 
