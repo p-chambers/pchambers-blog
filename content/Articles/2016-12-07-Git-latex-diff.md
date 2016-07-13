@@ -1,4 +1,4 @@
-Title: Git "diff" for Latex Projects
+Title: Git Diff for Latex Projects
 Slug: git-latexdiff
 Date: 2016-07-12 17:16:05
 Tags: Git, Latex

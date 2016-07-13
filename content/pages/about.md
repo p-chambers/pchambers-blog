@@ -21,7 +21,7 @@ Academic history
 
 * BEng Aeronautics and Astronautics, University of Southampton (2014) - First-class honours.
 
-* iPhD Next Generation Computational Modelling Centre for Doctoral Training, University of Southampton (2014 - present). EPSRC funded.
+* iPhD Next Generation Computational Modelling Centre for Doctoral Training, University of Southampton (2014 - present). Supported by EPSRC grant EP/L015382/1.
 
 
 Conferences/Relevant Work
@@ -32,3 +32,10 @@ Conferences/Relevant Work
 * July 2015 - [Beihang University International Graduate Summer School 2015](http://igss.buaa.edu.cn/info/1045/1025.htm): Full scholarship
 
 * March 2015 - Paid consulting work on high-resolution shock capturing methods for [KTN UK](http://www.ktn-uk.co.uk/)
+
+Workshops Delivered
+-------------------
+
+* Jun 21 2016 - [Intermediate Python course]({filename}/Tutorials/intermediate_python.md) at the [NGCM Summer Academy](http://ngcm.soton.ac.uk/summer-academy/basics.html), University of Southampton. Trained approximately 25 graduate students in Python and object oriented programming, using material written by myself and a colleague.
+
+* May 27 2016 - Python Object Oriented Programming workshop, using self-designed material. Approximately 20 graduate students attended. 
